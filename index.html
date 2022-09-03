@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Import -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts:
+        font-family: 'Inter', sans-serif;
+        font-family: 'Roboto', sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+    
+    <title>SyncTur-Viagens</title>
+</head>
+<body>
+
+    <header>
+        <p>SyncTur</p>
+    </header>
+
+    <div id="titulo">
+        <h1>Cadastrar pacotes</h1>
+    </div>
+
+    <section>
+
+        <div id="contain1">
+            <div>
+                <h3>Pacote</h3>
+                <input type="text" id="inp_nomeCompleto" placeholder="Digite Nome Completo">
+                <div id="div_pacote">
+                    <div>
+                        <h3>Status do Pacote</h3>
+                        <input type="radio" name="result" id="ativo" value = true > <label for="ativo" id="lbl_ativo">Ativo</label><br>
+                        <input type="radio" name="result" id="inativo" value = false checked="checked"> <label for="inativo" id="lbl_inativo">Inativo</label>
+                    </div>
+
+                    <div>
+                        <h3>Data da Viagem</h3>
+                        <input type="date" name="data" id="data" placeholder="Data">
+                    </div>
+                </div>    
+            </div>
+
+            <div>
+                <h3>Descrição</h3>
+                <textarea name="textarea" id="inp_descricao" placeholder="Descrição do pacote" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div id="btn_cadastrar">
+            <button type="submit" id="cadastro_btn" >Cadastrar</button>
+        </div>
+
+        <div id="contain2">
+            <div class="card">
+                <h3 id="pacote01">Pacote X</h3>
+                <p class="p_text01">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </p>
+                <p class="p_data01"> Data da viagem: 17/08/22</p>
+                <div class="btn_localizacao">
+                    <button class="btn_editar01">Editar</button> <button class="btn_excluir01">Excluir</button>
+                </div>
+            </div>
+        </div>    
+<!-- 
+            <div class="card">
+                <h3 id="pacote02">Pacote Y</h3>
+                <p class="p_text02">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </p>
+                <p class="p_data02">Data da viagem: 17/08/22</p>
+                <div class="btn_localizacao">
+                    <button class="btn_editar02">Editar</button> <button class="btn_excluir02">Excluir</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 id="pacote03" >Pacote Z</h3>
+                <p class="p_text03">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </p>
+                <p class="p_data03">Data da viagem: 17/08/22</p>
+                <div class="btn_localizacao">
+                    <button class="btn_editar03">Editar</button> <button class="btn_excluir03">Excluir</button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <p id="teste">444444444</p> -->
+
+        <footer>
+            <div>
+                <h2>SyncTur</h2>
+            </div>
+            <div>
+               <p> Company Inc., 8901 Marmora Road, Glasgow, D04 89GR <br> Call us now toll free: (800)2345-6789 <br> Customer support: support@demolink.org <br> Skype: sample-username</p>
+            </div>
+        </footer>
+
+    </section>
+
+    <script src="Pacote.js"></script>
+</body>
+</html>
