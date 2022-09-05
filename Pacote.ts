@@ -290,7 +290,7 @@ function TransformarDataTexto(data:string):string{
     let newDate = new Date(data)
     let dataString:string
 
-    dataString=(Number(newDate.getDate()).toString().padStart(2,"0")+"/"+
+    dataString=(Number(newDate.getDate()+1).toString().padStart(2,"0")+"/"+
     (newDate.getMonth()+1).toString().padStart(2,"0")+"/"+   
     newDate.getFullYear().toString())           //PadStart(numero de digitos obrigatorio (2), adiciona um 0 se não tiver dois digitos (0) ) 
 
