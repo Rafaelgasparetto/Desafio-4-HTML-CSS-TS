@@ -36,13 +36,15 @@
                 <div id="div_pacote">
                     <div>
                         <h3>Status do Pacote</h3>
-                        <input type="radio" name="result" id="ativo" value = true > <label for="ativo" id="lbl_ativo">Ativo</label><br>
-                        <input type="radio" name="result" id="inativo" value = false checked="checked"> <label for="inativo" id="lbl_inativo">Inativo</label>
+                        <input type="radio" name="result" id="ativo" value = true > 
+                        <label for="ativo" id="lbl_ativo">Ativo</label><br>
+                        <input type="radio" name="result" id="inativo" value = false checked="checked"> 
+                        <label for="inativo" id="lbl_inativo">Inativo</label>
                     </div>
 
                     <div>
                         <h3>Data da Viagem</h3>
-                        <input type="date" name="data" id="data" placeholder="Data">
+                        <input class="data_cadastro" type="date" name="data" id="data" placeholder="Data">
                     </div>
                 </div>    
             </div>
@@ -52,10 +54,12 @@
                 <textarea name="textarea" id="inp_descricao" placeholder="Descrição do pacote" cols="30" rows="10"></textarea>
             </div>
         </div>
+        <p id="resposta_data"></p>
         <div id="btn_cadastrar">
             <button type="submit" id="cadastro_btn" >Cadastrar</button>
+            <p id="resposta_cadastro"></p>
         </div>
-
+        
         <div id="contain2">
             <div class="card">
                 <h3 id="pacote01">Pacote X</h3>
